@@ -36,10 +36,10 @@ for i in tqdm(range(1)):
         num_of_solutions += 1
         draw_net(solution, view=True, filename='./images/solution-' + str(num_of_solutions), show_disabled=True)
 
-logger.info('Total Number of Solutions: ', num_of_solutions)
-logger.info('Average Number of Hidden Nodes in a Solution', avg_num_hidden_nodes)
-logger.info('Solution found on average in:', avg_num_generations, 'generations')
-logger.info('Minimum number of hidden nodes:', min_hidden_nodes)
-logger.info('Maximum number of hidden nodes:', max_hidden_nodes)
-logger.info('Minimum number of generations:', min_num_generations)
-logger.info('Found minimal solution:', found_minimal_solution, 'times')
+logger.info(f'Total Number of Solutions: , {num_of_solutions}')
+logger.info(f'Average Number of Hidden Nodes in a Solution {avg_num_hidden_nodes}')
+logger.info(f'Solution found on average in: {avg_num_generations}  generations')
+logger.info(f'Minimum number of hidden nodes: {min_hidden_nodes}')
+logger.info(f'Maximum number of hidden nodes:, {max_hidden_nodes}')
+logger.info(f'Minimum number of generations:{min_num_generations}')
+logger.info(f'Found minimal solution: {found_minimal_solution} times')
